@@ -4,7 +4,7 @@
     "description": "This is a website for a construction company named Maxi-contractors",
     "main": "index.js",
     "scripts": {
-        "sass": "node-sass -w scss/ -o dist/ --recursive"
+        "sass": "node-sass -w scss/ -o dist/css --recursive"
     },
     "repository": {
         "type": "git",
