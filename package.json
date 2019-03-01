@@ -1,19 +1,22 @@
 {
-  "name": "maxi-contractors_website",
-  "version": "1.0.0",
-  "description": "This is a website for a construction company named Maxi-contractors",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ssubaru09/maxi-contractors_website.git"
-  },
-  "author": "P Kimotho",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ssubaru09/maxi-contractors_website/issues"
-  },
-  "homepage": "https://github.com/ssubaru09/maxi-contractors_website#readme"
+    "name": "maxi-contractors_website",
+    "version": "1.0.0",
+    "description": "This is a website for a construction company named Maxi-contractors",
+    "main": "index.js",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o dist/ --recursive"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ssubaru09/maxi-contractors_website.git"
+    },
+    "author": "P Kimotho",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ssubaru09/maxi-contractors_website/issues"
+    },
+    "homepage": "https://github.com/ssubaru09/maxi-contractors_website#readme",
+    "dependencies": {
+        "node-sass": "^4.11.0"
+    }
 }
