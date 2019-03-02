@@ -1,0 +1,64 @@
+nav {
+    float: right;
+    padding: 25px 20px 0 0;
+    ul {
+        list-style-type: none;
+        li {
+            font-size: 150%;
+            display: inline-block;
+            padding: 10px;
+            a:hover {
+                color: $secondary-color;
+                border-top: 1px solid $secondary-color;
+                @include easeOut;
+            }
+            .current {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+#menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(../img/nav.png) center;
+}
+
+a:hover#menu-icon {
+    border-radius: 4px 4px 0 0;
+}
+
+// Media Queries
+@media screen and (max-width: 768px) {
+    header {
+        position: absolute;
+        background: black;
+    }
+    #menu-icon {
+        display: inline-block;
+    }
+    nav ul,
+    nav:active ul {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        padding: 10px;
+        background: $primary-color;
+        right: 20px;
+        top: 45px;
+        border: 1px solid $secondary-color;
+        border-radius: 10px 0 10px 10px;
+        width: 40%;
+        li {
+            text-align: center;
+            font-size: 100%;
+            width: 100%;
+            padding: 5px;
+        }
+    }
+    nav:hover ul {
+        display: block;
+    }
+}
